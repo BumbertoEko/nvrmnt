@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
-    font-size: 140%;
 }
 
 body{
@@ -16,18 +14,25 @@ footer{
 }
 
 :root{
+    --glow-outline: rgba(255, 255, 255, 0.447);
+
     --base-bg: rgba(0, 0, 0, 0.59);
     --base-color: rgba(45, 45, 45, 0.50);
-    --base-variant: rgba(36, 36, 36, 0.7);
+    --base-variant: rgba(36, 36, 36, 0.30);
+
     --text-color: white;
 }
 
 /* maybe dark and light mode? */
+/*i did not test these*/
 
 .lightmode{
+    --glow-outline: rgba(255, 255, 255, 0.469);
+    
     --base-bg: rgb(243, 243, 243);
     --base-color: rgb(235, 235, 235, 0.50);
-    --base-variant: rgba(255, 255, 255, 0.342);
+    --base-variant: rgba(255, 255, 255, 0.30);
+
     --text-color: black;
 }
 
@@ -45,13 +50,26 @@ footer{
     z-index: -1; /* without this header and footer is hidden by the bg*/
 }
 
+#header{
+    background-color: var(--base-color);
+    border-bottom: solid  var(--glow-outline);
+    backdrop-filter: blur(7px); /*adds background blurr to header*/
+
+    font-size: 32px;
+
+    padding: 30px;
+}
+
 .material-symbols-outlined{
     color: white;
 }
 
-#header{
-    background-color: var(--base-color);
-    backdrop-filter: blur(7px); /*adds background blurr to header*/
+.box{
+    background-color: var(--base-variant);
+    
+    border-radius: 10px;
+    border: solid var(--glow-outline);
 
+    margin: 5%;
     padding: 30px;
 }
