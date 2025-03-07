@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-size: 140%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+}
+
+:root{
+    --base-bg: rgba(0, 0, 0, 0.59);
+    --base-color: rgb(45, 45, 45);
+    --base-variant: rgba(36, 36, 36, 0.7);
+    --text-color: white;
+}
+
+/* maybe dark and light mode? */
+
+.lightmode{
+    --base-bg: rgb(243, 243, 243);
+    --base-color: rgb(235, 235, 235);
+    --base-variant: rgba(255, 255, 255, 0.342);
+    --text-color: black;
+}
+
+/*Filip Zrnzević credit him for bg*/
+#background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh; /*covers the whole screen*/
+    background: linear-gradient(rgba(64, 64, 64, 0.288) 0%, var(--base-bg) 80%), url('../img/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg');
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -1; /* without this header and footer is hidden by the bg*/
+}
+
+.material-symbols-outlined{
+    color: white;
+}
+
+#header{
+    background-color: var(--base-color);
+    backdrop-filter: blur(7px); /*adds background blurr to header*/
+
+    padding: 30px;
+}
