@@ -7,14 +7,27 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+
+    font-size: 24px;
+
+    color: white;
 }
 
 footer{
     margin-top: auto;
 }
 
+hr{
+    height: 1px;
+    
+    border: 0; /*apperantly we need this to style hr*/
+
+    border-top: 2px solid #242424b9;
+    margin: 12px;
+}
+
 :root{
-    --glow-outline: rgba(255, 255, 255, 0.447);
+    --glow-outline: rgba(26, 26, 26, 0.447);
 
     --base-bg: rgba(0, 0, 0, 0.59);
     --base-color: rgba(45, 45, 45, 0.50);
@@ -41,10 +54,11 @@ footer{
     position: absolute;
     width: 100vw;
     height: 100vh; /*covers the whole screen*/
-    background: linear-gradient(rgba(64, 64, 64, 0.288) 0%, var(--base-bg) 80%), url('../img/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg');
+
+    background: linear-gradient(rgba(64, 64, 64, 0.288) 0%, var(--base-bg) 80%), url('../img/filip-zrnzevic-tj2uU85m_q4-unsplash.jpg');
     background-size: cover;
     
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
 
     z-index: -1; /* without this header and footer is hidden by the bg*/
@@ -69,7 +83,17 @@ footer{
     
     border-radius: 10px;
     border: solid var(--glow-outline);
+    backdrop-filter: blur(2px); /*adds background blurr to header*/
 
     margin: 5%;
     padding: 30px;
+}
+
+.header-box{
+    background-color: var(--base-variant);
+    
+    border-radius: 10px;
+    border: solid var(--glow-outline);
+
+    padding: 8px;
 }
