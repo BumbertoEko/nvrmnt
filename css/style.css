@@ -16,6 +16,8 @@ body{
     font-size: 24px;
 
     color: var(--text-color);
+
+    text-shadow: 2px 2px 2px var(--text-color-shadow);
 }
 
 footer{
@@ -39,6 +41,7 @@ hr{
     --base-variant: rgba(36, 36, 36, 0.30);
 
     --text-color: white;
+    --text-color-shadow: black;
 }
 
 /* maybe dark and light mode? */
@@ -52,6 +55,7 @@ hr{
     --base-variant: rgba(255, 255, 255, 0.30);
 
     --text-color: black;
+    --text-color-shadow: white;
 }
 
 /*Filip Zrnzević credit him for bg*/
