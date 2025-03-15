@@ -8,6 +8,11 @@ a{
     color: var(--text-color);
 }
 
+/*Filip Zrnzević credit him for bg*/
+main{
+    background-image: url('../img/filip-zrnzevic-tj2uU85m_q4-unsplash.jpg');
+}
+
 body{
     height: 100vh;
     display: flex; 
@@ -59,19 +64,6 @@ hr{
 
     --text-color: black;
     --text-color-shadow: white;
-}
-
-/*Filip Zrnzević credit him for bg*/
-#background {
-    position: absolute;
-
-    background: linear-gradient(rgba(64, 64, 64, 0.288) 0%, var(--base-bg) 80%);
-    background-size: auto;
-    
-    background-position: top center;
-    background-repeat: no-repeat;
-
-    z-index: -1; /* without this header and footer is hidden by the bg*/
 }
 
 #header{
