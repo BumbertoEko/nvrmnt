@@ -75,6 +75,13 @@ hr{
 }
 
 #header{
+    position: fixed;
+
+    width: 100%;
+    /*makes the header be above everything else*/
+    /*also the with fixes the weirdness*/
+    z-index: 1;
+
     background-color: var(--base-color);
     border-bottom: solid  var(--glow-outline);
     backdrop-filter: blur(7px); /*adds background blurr to header*/
