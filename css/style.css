@@ -52,11 +52,9 @@ hr{
 /*Filip Zrnzević credit him for bg*/
 #background {
     position: absolute;
-    width: 100vw;
-    height: 100vh; /*covers the whole screen*/
 
     background: linear-gradient(rgba(64, 64, 64, 0.288) 0%, var(--base-bg) 80%), url('../img/filip-zrnzevic-tj2uU85m_q4-unsplash.jpg');
-    background-size: cover;
+    background-size: auto;
     
     background-position: top center;
     background-repeat: no-repeat;
