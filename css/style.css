@@ -21,7 +21,10 @@ body{
 }
 
 footer{
-    margin-top: auto;
+    display: block;
+    position: fixed;
+
+    top: 93vh;
 }
 
 hr{
@@ -117,6 +120,8 @@ hr{
     margin: 5%;
     margin-bottom: 0;
     padding: 30px;
+
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .box-container{
