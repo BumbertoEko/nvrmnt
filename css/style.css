@@ -65,7 +65,7 @@ hr{
 #background {
     position: absolute;
 
-    background: linear-gradient(rgba(64, 64, 64, 0.288) 0%, var(--base-bg) 80%), url('../img/filip-zrnzevic-tj2uU85m_q4-unsplash.jpg');
+    background: linear-gradient(rgba(64, 64, 64, 0.288) 0%, var(--base-bg) 80%);
     background-size: auto;
     
     background-position: top center;
@@ -110,16 +110,23 @@ hr{
 
 .header-box{
     background-color: var(--base-variant);
-    
+
     border-radius: 10px;
     border: solid var(--glow-outline);
 
     margin: 5px;
-    margin-right: 10px;
+    margin-right: 30px;
     
     padding: 8px;
 
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.header-box:hover{
+    transform: scale(1.04);
 }
 
 .box{
@@ -134,6 +141,13 @@ hr{
     padding: 30px;
 
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.box:hover{
+    transform: scale(1.02);
 }
 
 .box-container{
