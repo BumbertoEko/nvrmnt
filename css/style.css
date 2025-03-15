@@ -74,8 +74,30 @@ hr{
     padding: 30px;
 }
 
+.header-stuff{
+    display: flex;
+}
+
+.header-stuff-right{
+    position: fixed;
+    display: flex;
+
+    justify-content: flex-end;
+    width: 93.5vw; /*do not touch*/
+}
+
 .material-symbols-outlined{
     color: white;
+}
+
+.header-box{
+    background-color: var(--base-variant);
+    
+    border-radius: 10px;
+    border: solid var(--glow-outline);
+
+    margin: 5px;
+    padding: 8px;
 }
 
 .box{
@@ -87,13 +109,4 @@ hr{
 
     margin: 5%;
     padding: 30px;
-}
-
-.header-box{
-    background-color: var(--base-variant);
-    
-    border-radius: 10px;
-    border: solid var(--glow-outline);
-
-    padding: 8px;
 }
