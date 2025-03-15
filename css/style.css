@@ -88,7 +88,7 @@ hr{
 
     font-size: 32px;
 
-    padding: 30px;
+    padding: 15px;
 }
 
 .header-stuff{
@@ -100,7 +100,8 @@ hr{
     display: flex;
 
     justify-content: flex-end;
-    width: 93.5vw; /*do not touch*/
+
+    width: 97vw; /*do not touch*/
 }
 
 .material-symbols-outlined{
@@ -114,6 +115,8 @@ hr{
     border: solid var(--glow-outline);
 
     margin: 5px;
+    margin-right: 10px;
+    
     padding: 8px;
 }
 
