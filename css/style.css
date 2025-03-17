@@ -159,6 +159,8 @@ hr{
 
 .box-container{
     display: flex;
+
+    margin-bottom: 5%;
 }
 
 .profile{
