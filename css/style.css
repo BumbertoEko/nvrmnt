@@ -9,8 +9,14 @@ a{
 }
 
 /*Filip Zrnzević credit him for bg*/
-main{
+.main-bg-index{
     background-image: url('../img/filip-zrnzevic-tj2uU85m_q4-unsplash.jpg');
+}
+.main-bg-about{
+    background-image: url('../img/filip-zrnzevic-gCr5rJcYwKc-unsplash.jpg');
+}
+.main-bg-contact{
+    background-image: url('../img/filip-zrnzevic-HpkTCaSIOy4-unsplash.jpg');
 }
 
 body{
